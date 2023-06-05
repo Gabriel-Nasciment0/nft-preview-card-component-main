@@ -11,124 +11,45 @@
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body,
-    html {
-      width: 100vw;
-      height: 100vh;
-      background: hsl(217, 54%, 11%);
-    }
-
-    main {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300px;
-      transform: translate(-50%, -50%);
-      background: hsl(216, 50%, 16%);
-      border-radius: 15px;
-      padding: 10px;
-    }
-
-    .boximagem>img {
-      width: 100%;
-      padding: 5%;
-      border-radius: 25px;
-    }
-
-    h1 {
-      padding-left: 5%;
-      color: white;
-    }
-
-    p {
-      padding: 10px 5%;
-      color: #8bacda80;
-    }
-
-    .boxnumeros {
-      font-size: 14px;
-    }
-
-    .eth {
-      display: inline-block;
-      margin-right: 60px;
-      color: #00fff7;
-    }
-
-    .clock {
-      display: inline-block;
-      color: #8bacda;
-    }
-
-    hr {
-      margin: 0 auto;
-      width: 90%;
-      background: #015252;
-      margin-bottom: 5px;
-    }
-
-    .avatar {
-      padding: 10px;
-    }
-
-    .avatar img {
-      float: left;
-
-      border-radius: 50%;
-      border: 1px solid #ffffff;
-      height: 30px;
-
-    }
-
-    .avatar p {
-      float: right;
-      font-size: 17px;
-      text-align: center;
-      margin-right: 28px;
-    }
-
-    span {
-      color: #ffffff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <main>
-    <section class="boximagem">
-      <img src="images/image-equilibrium.jpg" alt="Equilibrium">
-    </section>
-
-    <section class="boxconteudo">
-      <h1>Equilibrium #3429</h1>
-
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-
-      <section class="boxnumeros">
-        <p class="eth">
-          <img src="images/icon-ethereum.svg" alt="">
-          0.041 ETH
-        </p>
-        <p class="clock">
-          <img src="images/icon-clock.svg" alt="">
-          3 days left
-        </p>
+    <section class="boxcontainer">
+      <section class="boximg">
       </section>
 
-    </section>
-    <hr>
-    <section class="avatar">
-      <img src="images/image-avatar.png" alt="">
-      <p>
-        Creation of <span>Jules Wyvern</span>
-      </p>
+      <section class="boxconteudo">
+        <h1>Equilibrium #3429</h1>
+
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+
+        <section class="boxtext">
+          <div class="boxeth">
+            <p class="eth">
+              <img src="images/icon-ethereum.svg" alt="">
+              0.041 ETH
+            </p>
+          </div>
+          <div class="clock">
+            <p class="text-clock">
+              <img src="images/icon-clock.svg" alt="">
+              3 days left
+            </p>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="boxavatar">
+        <div class="avatar-icon"></div>
+        <div class="avatar-text">
+          <p>
+            Creation of <span>Jules Wyvern</span>
+          </p>
+        </div>
+      </section>
     </section>
   </main>
 
