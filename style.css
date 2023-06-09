@@ -2,61 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
 }
 body {
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 main {
-    width: 300px;
-    height: 550px;
-    margin: 30px auto;
-}
-.boxcontainer {
     width: 100%;
     height: 100%;
-    border-radius: 20px 20px 20px 20px;
-    background: blue;
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: hsl(217, 54%, 11%);
+}
+.boxcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 260px;
+    height: 430px;
+    padding: 10px;
+    background: hsl(216, 50%, 16%);
+    text-align: justify;
+    border-radius: 15px;
+    color: white;
 }
 .boximg {
-    width: 100%;
-    height: 60%;
-    background: url(images/image-equilibrium.jpg) center no-repeat;
+    background: url(images/image-equilibrium.jpg) no-repeat center;
     background-size: cover;
-    border-radius: 25px;
+    width: 90%;
+    height: 240px;
+    border-radius: 15px;
 }
 .boxconteudo {
-    width: 100%;
-    height: 33.3%;
-    padding: 15px;
-    text-align: center;
+    padding: 5% 7%;
 }
 .boxconteudo > p {
-    padding: 10px 0;
+    padding: 10px 0px;
+    font-size: 14px;
+    text-align: left;
+    color: hsl(215, 51%, 70%);
 }
 .boxtext {
     display: flex;
-    justify-content: center;
-   
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 10px;
+    font-size: 14px;
 }
-.eth {
-    padding-right: 25px;
+img {
+    display: inline-block;
+    vertical-align: -3px;
 }
-.clock{
-    padding-left: 25px;
+.clock {
+    color: hsl(215, 51%, 70%);
+}
+.boxeth {
+    color: hsl(178, 100%, 50%);
 }
 .boxavatar {
-    border-top: 1px solid black;
     display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 33.3%;
-    padding: 15px;
-  
 }
 .avatar-icon {
-    background: url(images/image-avatar.png) center no-repeat;
-    background-size: cover;
+    display: inline-block;
+    vertical-align: -10px;
+    margin-right: 15px;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.avatar-text {
+    display: inline-block;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+span {
+    color: white;
 }
