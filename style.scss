@@ -36,6 +36,17 @@ body {
                 width: 100%;
                 height: 300px;
                 border-radius: 25px;
+                .box-view {
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 255, 255, 0.3) url(images/icon-view.svg)
+                        none center;
+                }
+                .box-view:hover {
+                    background: rgba(0, 255, 255, 0.3) url(images/icon-view.svg)
+                        no-repeat center;
+                    cursor: pointer;
+                }
             } //boximg
             .boxconteudo {
                 padding: 0 2%;
@@ -43,13 +54,19 @@ body {
                     font-size: 25px;
                     padding: 20px 0;
                 } //h1
+                h1:hover {
+                    color: var(--Cyan);
+                    cursor: pointer;
+                }
                 p {
                     color: var(--Very-dark-blue-line);
                     padding: 5px 0;
+                    font-size: 18px;
                 } //p
                 .boxtext {
                     display: flex;
                     justify-content: space-between;
+                    padding: 10px 0;
                     border-bottom: 2px solid var(--Very-dark-blue-line);
                     .eth {
                         color: var(--Cyan);
@@ -78,9 +95,90 @@ body {
                         span {
                             color: var(--White);
                         }
+                        span:hover {
+                            color: var(--Cyan);
+                            cursor: pointer;
+                        }
                     } //p
                 } //text
             }
         } //container
     } //main
 } //body
+@media screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: var(--Very-dark-blue-main-BG);
+            color: var(--White);
+            .container {
+                background: var(--Very-dark-blue-card-BG);
+                width: 350px;
+                border-radius: 25px;
+                padding: 25px;
+                .boximg {
+                    background: url(images/image-equilibrium.jpg) no-repeat
+                        center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 25px;
+                } //boximg
+                .boxconteudo {
+                    padding: 0 2%;
+                    h1 {
+                        font-size: 25px;
+                        padding: 20px 0;
+                    } //h1
+
+                    p {
+                        color: var(--Very-dark-blue-line);
+                        padding: 5px 0;
+                        font-size: 18px;
+                    } //p
+                    .boxtext {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 0;
+                        border-bottom: 2px solid var(--Very-dark-blue-line);
+                        .eth {
+                            color: var(--Cyan);
+                        } //eth
+                        .clock {
+                            .text-clock {
+                                color: var(--Soft-blue);
+                            }
+                        } //clock
+                    } //boxtext
+                } //conteudo
+
+                .boxavatar {
+                    .avatar-text {
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding-top: 15px;
+                        img {
+                            width: 40px;
+                            border: 1.5px solid var(--White);
+                            border-radius: 50%;
+                        } //img
+                        p {
+                            padding-top: 10px;
+                            color: var(--Soft-blue);
+                            span {
+                                color: var(--White);
+                            }
+                        } //p
+                    } //text
+                }
+            } //container
+        } //main
+    } //body
+}
